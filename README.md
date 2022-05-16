@@ -15,4 +15,4 @@ The threads will each be given a workload of sequential blocks of size / cpus.
 The factors will be out of order as different cpus are calculating different blocks.
 
 ## Bugs
-Because this was educational code, it is a novel implementation and calculates the range of numers per thread once. This results in some threads returning quicker than others (based on size of numbers in that threads range). Better would be to do this in smaller blocks, reassigning a new block to a thread when it completes the previous block, w/mutex to allow for tracking of which blocks have been assigned.
+Because this was educational code, it is a novel implementation and calculates the range of numbers per thread once. This results in some threads returning quicker than others (based on size of numbers in that threads range). Better would be to do this in smaller blocks, reassigning a new block to a thread when it completes the previous block, w/mutex to allow for tracking of which blocks have been assigned.
